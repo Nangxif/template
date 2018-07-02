@@ -1,0 +1,648 @@
+/*Internet Explorer 9 以及更早的版本不支持 */
+.nangxi{
+	position: relative;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode:forwards; 
+}
+/*淡入*/
+/* normal正常的淡入*/
+/*1.从上淡入*/
+.normal-fadein-from-top{
+	animation:normal-fadein-from-top-move 1.5s ease;
+	-webkit-animation:normal-fadein-from-top-move 1.5s ease; /*Safari and Chrome*/ 
+}
+@keyframes normal-fadein-from-top-move
+{
+	from {top:-25px;opacity:0;}
+	to {top:0px;opacity: 1}
+}
+
+@-webkit-keyframes normal-fadein-from-top-move
+{
+	from {top:-50px;opacity:0;}
+	to {top:0px;opacity: 1}
+}
+/*2.从下淡入*/
+.normal-fadein-from-bottom{
+	animation:normal-fadein-from-bottom-move 1.5s ease;
+	-webkit-animation:normal-fadein-from-bottom-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes normal-fadein-from-bottom-move
+{
+	from {bottom:-25px;opacity:0;}
+	to {bottom:0px;opacity: 1}
+}
+
+@-webkit-keyframes normal-fadein-from-bottom-move
+{
+	from {bottom:-50px;opacity:0;}
+	to {bottom:0px;opacity: 1}
+}
+/*3.从左淡入*/
+.normal-fadein-from-left{
+	animation:normal-fadein-from-left-move 1.5s ease;
+	-webkit-animation:normal-fadein-from-left-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes normal-fadein-from-left-move
+{
+	from {left:-25px;opacity:0;}
+	to {left:0px;opacity: 1}
+}
+
+@-webkit-keyframes normal-fadein-from-left-move
+{
+	from {left:-50px;opacity:0;}
+	to {left:0px;opacity: 1}
+}
+/*4.从右淡入*/
+.normal-fadein-from-right{
+	animation:normal-fadein-from-right-move 1.5s ease;
+	-webkit-animation:normal-fadein-from-right-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes normal-fadein-from-right-move
+{
+	from {right:-25px;opacity:0;}
+	to {right:0px;opacity: 1}
+}
+
+@-webkit-keyframes normal-fadein-from-right-move
+{
+	from {right:-50px;opacity:0;}
+	to {right:0px;opacity: 1}
+}
+
+/*spring弹簧淡入(弹一次)*/
+/*1.从上淡入*/
+.spring-fadein-from-top{
+	animation:spring-fadein-from-top-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-top-move 1.5s ease-in; /*Safari and Chrome*/ 
+}
+@keyframes spring-fadein-from-top-move
+{
+	0% {top:-25px;opacity:0;}
+	70% {top:6px;opacity: 0.7}
+	100%{top:0px;opacity: 1}
+}
+
+@-webkit-keyframes spring-fadein-from-top-move
+{
+	0% {top:-25px;opacity:0;}
+	70% {top:6px;opacity: 0.7}
+	100%{top:0px;opacity: 1}
+}
+/*2.从下淡入*/
+.spring-fadein-from-bottom{
+	animation:spring-fadein-from-bottom-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-bottom-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes spring-fadein-from-bottom-move
+{
+	0% {bottom:-25px;opacity:0;}
+	70% {bottom:6px;opacity: 0.7}
+	100%{bottom:0px;opacity: 1}
+}
+
+@-webkit-keyframes spring-fadein-from-bottom-move
+{
+	0% {bottom:-25px;opacity:0;}
+	70% {bottom:6px;opacity: 0.7}
+	100%{bottom:0px;opacity: 1}
+}
+/*3.从左淡入*/
+.spring-fadein-from-left{
+	animation:spring-fadein-from-left-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-left-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes spring-fadein-from-left-move
+{
+	0% {left:-150px;opacity:0;}
+	70% {left:6px;opacity: 0.7}
+	100%{left:0px;opacity: 1}
+}
+
+@-webkit-keyframes spring-fadein-from-left-move
+{
+	0% {left:-150px;opacity:0;}
+	70% {left:6px;opacity: 0.7}
+	100%{left:0px;opacity: 1}
+}
+/*4.从右淡入*/
+.spring-fadein-from-right{
+	animation:spring-fadein-from-right-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-right-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes spring-fadein-from-right-move
+{
+	0% {right:-150px;opacity:0;}
+	70% {right:6px;opacity: 0.7}
+	100%{right:0px;opacity: 1}
+}
+
+@-webkit-keyframes spring-fadein-from-right-move
+{
+	0% {right:-150px;opacity:0;}
+	70% {right:6px;opacity: 0.7}
+	100%{right:0px;opacity: 1}
+}
+
+
+
+
+
+/*spring弹簧淡入(弹两次)*/
+/*1.从上淡入*/
+.spring-fadein-from-top-twice{
+	animation:spring-fadein-from-top-twice-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-top-twice-move 1.5s ease-in; /*Safari and Chrome*/ 
+}
+@keyframes spring-fadein-from-top-twice-move
+{
+	0% {top:-25px;}
+	70% {top:6px;}
+	80%{top:-3px;}
+	90%{top:3px;}
+	100%{top:0px;}
+}
+
+@-webkit-keyframes spring-fadein-from-top-twice-move
+{
+	0% {top:-25px;}
+	70% {top:6px;}
+	80%{top:-3px;}
+	90%{top:3px;}
+	100%{top:0px;}
+}
+/*2.从下淡入*/
+.spring-fadein-from-bottom-twice{
+	animation:spring-fadein-from-bottom-twice-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-bottom-twice-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes spring-fadein-from-bottom-twice-move
+{
+	0% {bottom:-25px;}
+	70% {bottom:6px;}
+	80%{bottom:-3px;}
+	90%{bottom:3px;}
+	100%{bottom:0px;}
+}
+
+@-webkit-keyframes spring-fadein-from-bottom-twice-move
+{
+	0% {bottom:-25px;}
+	70% {bottom:6px;}
+	80%{bottom:-3px;}
+	90%{bottom:3px;}
+	100%{bottom:0px;}
+}
+/*3.从左淡入*/
+.spring-fadein-from-left-twice{
+	animation:spring-fadein-from-left-twice-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-left-twice-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes spring-fadein-from-left-twice-move
+{
+	0% {left:-25px;}
+	70% {left:6px;}
+	80%{left:-3px;}
+	90%{left:3px;}
+	100%{left:0px;}
+}
+
+@-webkit-keyframes spring-fadein-from-left-twice-move
+{
+	0% {left:-25px;}
+	70% {left:6px;}
+	80%{left:-3px;}
+	90%{left:3px;}
+	100%{left:0px;}
+}
+/*4.从右淡入*/
+.spring-fadein-from-right-twice{
+	animation:spring-fadein-from-right-twice-move 1.5s ease-in;
+	-webkit-animation:spring-fadein-from-right-twice-move 1.5s ease; /*Safari and Chrome*/
+}
+@keyframes spring-fadein-from-right-twice-move
+{
+	0% {right:-25px;}
+	70% {right:6px;}
+	80%{right:-3px;}
+	90%{right:3px;}
+	100%{right:0px;}
+}
+
+@-webkit-keyframes spring-fadein-from-right-twice-move
+{
+	0% {right:-25px;}
+	70% {right:6px;}
+	80%{right:-3px;}
+	90%{right:3px;}
+	100%{right:0px;}
+}
+
+
+
+
+
+
+
+/*rotate旋转淡入*/
+/*1.从上淡入*/
+.rotate-fadein-from-top{
+	animation:rotate-fadein-from-top-move 1.5s linear;
+	-webkit-animation:rotate-fadein-from-top-move 1.5s linear; /*Safari and Chrome*/ 
+}
+@keyframes rotate-fadein-from-top-move
+{
+	0% {top:-25px;opacity:0;transform: rotate(0deg);}
+	20% {top:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{top:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{top:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{top:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{top:0px;opacity: 1;transform: rotate(900deg);}
+}
+
+@-webkit-keyframes rotate-fadein-from-top-move
+{
+	0% {top:-25px;opacity:0;transform: rotate(0deg);}
+	20% {top:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{top:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{top:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{top:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{top:0px;opacity: 1;transform: rotate(900deg);}
+}
+/*2.从下淡入*/
+.rotate-fadein-from-bottom{
+	animation:rotate-fadein-from-bottom-move 1.5s linear;
+	-webkit-animation:rotate-fadein-from-bottom-move 1.5s linear; /*Safari and Chrome*/
+}
+@keyframes rotate-fadein-from-bottom-move
+{
+	0% {bottom:-25px;opacity:0;transform: rotate(0deg);}
+	20% {bottom:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{bottom:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{bottom:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{bottom:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{bottom:0px;opacity: 1;transform: rotate(900deg);}
+}
+
+@-webkit-keyframes rotate-fadein-from-bottom-move
+{
+	0% {bottom:-25px;opacity:0;transform: rotate(0deg);}
+	20% {bottom:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{bottom:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{bottom:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{bottom:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{bottom:0px;opacity: 1;transform: rotate(900deg);}
+}
+/*3.从左淡入*/
+.rotate-fadein-from-left{
+	animation:rotate-fadein-from-left-move 1.5s linear;
+	-webkit-animation:rotate-fadein-from-left-move 1.5s linear; /*Safari and Chrome*/
+}
+@keyframes rotate-fadein-from-left-move
+{
+	0% {left:-25px;opacity:0;transform: rotate(0deg);}
+	20% {left:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{left:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{left:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{left:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{left:0px;opacity: 1;transform: rotate(900deg);}
+}
+
+@-webkit-keyframes rotate-fadein-from-left-move
+{
+	0% {left:-25px;opacity:0;transform: rotate(0deg);}
+	20% {left:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{left:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{left:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{left:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{left:0px;opacity: 1;transform: rotate(900deg);}
+}
+/*4.从右淡入*/
+.rotate-fadein-from-right{
+	animation:rotate-fadein-from-right-move 1.5s linear;
+	-webkit-animation:rotate-fadein-from-right-move 1.5s linear; /*Safari and Chrome*/
+}
+@keyframes rotate-fadein-from-right-move
+{
+	0% {right:-25px;opacity:0;transform: rotate(0deg);}
+	20% {right:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{right:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{right:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{right:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{right:0px;opacity: 1;transform: rotate(900deg);}
+}
+
+@-webkit-keyframes rotate-fadein-from-right-move
+{
+	0% {right:-25px;opacity:0;transform: rotate(0deg);}
+	20% {right:-20px;opacity: 0.2;transform: rotate(180deg);}
+	40%{right:-15px;opacity: 0.4;transform: rotate(360deg);}
+	60%{right:-10px;opacity: 0.6;transform: rotate(540deg);}
+	80%{right:-5px;opacity: 0.8;transform: rotate(720deg);}
+	100%{right:0px;opacity: 1;transform: rotate(900deg);}
+}
+
+
+/*large变大淡入*/
+/*正常的变大淡入*/
+.normal-large{
+	animation:normal-large-move 1s linear;
+	-webkit-animation:normal-large-move 1s linear; /*Safari and Chrome*/ 
+}
+@keyframes normal-large-move
+{
+	0% {opacity:0;transform: scale(0,0);}
+	20% {opacity: 0.2;transform: scale(0.2,0.2);}
+	40%{opacity: 0.4;transform: scale(0.4,0.4);}
+	60%{opacity: 0.6;transform: scale(0.6,0.6);}
+	80%{opacity: 0.8;transform: scale(0.8,0.8);}
+	100%{opacity: 1;transform: scale(1,1);}
+}
+
+@-webkit-keyframes normal-large-move
+{
+	0% {opacity:0;transform: scale(0,0);}
+	20% {opacity: 0.2;transform: scale(0.2,0.2);}
+	40%{opacity: 0.4;transform: scale(0.4,0.4);}
+	60%{opacity: 0.6;transform: scale(0.6,0.6);}
+	80%{opacity: 0.8;transform: scale(0.8,0.8);}
+	100%{opacity: 1;transform: scale(1,1);}
+}
+/*弹簧变大淡入*/
+.spring-large{
+	animation:spring-large-move 1.5s linear;
+	-webkit-animation:spring-large-move 1.5s linear; /*Safari and Chrome*/ 
+}
+@keyframes spring-large-move
+{
+	0% {opacity:0;transform: scale(0,0);}
+	60%{opacity: 0.4;transform: scale(1.2,1.2);}
+	80%{opacity: 0.6;transform: scale(0.9,0.9);}
+	100%{opacity: 1;transform: scale(1,1);}
+}
+
+@-webkit-keyframes spring-large-move
+{
+	0% {opacity:0;transform: scale(0,0);}
+	60%{opacity: 0.4;transform: scale(1.2,1.2);}
+	80%{opacity: 0.6;transform: scale(0.9,0.9);}
+	100%{opacity: 1;transform: scale(1,1);}
+}
+/*弹簧旋转变大淡入*/
+.spring-rotate-large{
+	animation:spring-rotate-large-move 1.5s linear;
+	-webkit-animation:spring-rotate-large-move 1.5s linear; /*Safari and Chrome*/ 
+}
+@keyframes spring-rotate-large-move
+{
+	0% {opacity:1;transform: scale(0,0);}
+	80%{opacity: 1;transform: scale(1.2,1.2);}
+	84%{opacity: 1;transform: scale(1.2,1.2);transform: rotate(9deg);}
+	88%{opacity: 1;transform: scale(1.2,1.2);transform: rotate(-9deg);}
+	92%{opacity: 1;transform: scale(1.2,1.2);transform: rotate(0deg);}
+	96%{opacity: 1;transform: scale(0.9,0.9);}
+	100%{opacity: 1;transform: scale(1,1);}
+}
+
+@-webkit-keyframes spring-rotate-large-move
+{
+	0% {opacity:1;transform: scale(0,0);}
+	80%{opacity: 1;transform: scale(1.2,1.2);}
+	84%{opacity: 1;transform: scale(1.2,1.2);transform: rotate(9deg);}
+	88%{opacity: 1;transform: scale(1.2,1.2);transform: rotate(-9deg);}
+	92%{opacity: 1;transform: scale(1.2,1.2);transform: rotate(0deg);}
+	96%{opacity: 1;transform: scale(0.9,0.9);}
+	100%{opacity: 1;transform: scale(1,1);}
+}
+
+
+
+/*淡入之后左右摇摆*/
+.fadein-swing{
+	animation:fadein-swing-move 1.5s linear;
+	-webkit-animation:fadein-swing-move 1.5s linear; /*Safari and Chrome*/ 
+}
+@keyframes fadein-swing-move
+{
+	0% {opacity:0;}
+	80%{opacity: 0.5;}
+	84%{opacity: 1;transform: rotateY(30deg);}
+	88%{opacity: 1;transform: rotateY(-30deg);}
+	92%{opacity: 1;transform: rotateY(30deg);}
+	96%{opacity: 1;transform: rotateY(-30deg);}
+	100%{opacity: 1;transform: rotateY(0deg);}
+}
+
+@-webkit-keyframes fadein-swing-move
+{
+	0% {opacity:0;}
+	80%{opacity: 0.5;}
+	84%{opacity: 1;transform: rotateY(30deg);}
+	88%{opacity: 1;transform: rotateY(-30deg);}
+	92%{opacity: 1;transform: rotateY(30deg);}
+	96%{opacity: 1;transform: rotateY(-30deg);}
+	100%{opacity: 1;transform: rotateY(0deg);}
+}
+
+
+
+
+/*撕扯*/
+.tear{
+	animation:tear-move 2s linear;
+	-webkit-animation:tear-move 2s linear; /*Safari and Chrome*/ 
+}
+@keyframes tear-move
+{
+	0%{left:-30px;transform: skewX(10deg);}
+	20%{left:-5px;transform: skewX(10deg);}
+	25%{left:10px;transform: skewX(-5deg);}
+	30%{left:-5px;transform: skewX(3deg);}
+	35%{left:0px;transform: skewX(0deg);}
+	40%{transform:skew(20deg,20deg);}
+	50%{transform:skew(-20deg,-20deg);}
+	60%{transform:skew(20deg,20deg);}
+	70%{transform:skew(0deg,0deg);}
+	80%{transform:scaleY(1.5);}
+	85%{transform:scaleY(0);}
+	95%{transform:scaleX(1.5);}
+	100%{transform:scaleX(0);}
+}
+
+@-webkit-keyframes tear-move
+{
+	0%{left:-30px;transform: skewX(10deg);}
+	20%{left:-5px;transform: skewX(10deg);}
+	25%{left:10px;transform: skewX(-5deg);}
+	30%{left:-5px;transform: skewX(3deg);}
+	35%{left:0px;transform: skewX(0deg);}
+	40%{transform:skew(20deg,20deg);}
+	50%{transform:skew(-20deg,-20deg);}
+	60%{transform:skew(20deg,20deg);}
+	70%{transform:skew(0deg,0deg);}
+	80%{transform:scaleY(1.5);}
+	85%{transform:scaleY(0);}
+	95%{transform:scaleX(1.5);}
+	100%{transform:scaleX(0);}
+
+}
+
+
+
+/*自由落体*/
+.free-fall{
+	animation:free-fall-move 1.5s linear;
+	-webkit-animation:free-fall-move 1.5s linear; /*Safari and Chrome*/ 
+}
+@keyframes free-fall-move
+{
+	0% {top:-40px;}
+	30%{top:0px;}
+	50%{top:-10px;}
+	55%{top:-15px;}
+	65%{top: 0px;}
+	75%{top: -5.5px;}
+	80%{top:-7.5px;}
+	90%{top: 0px;}
+	95%{top:-3px;}
+	100%{top: 0px;}
+}
+
+@-webkit-keyframes free-fall-move
+{
+	0% {top:-40px;}
+	30%{top:0px;}
+	50%{top:-10px;}
+	55%{top:-15px;}
+	65%{top: 0px;}
+	75%{top: -5.5px;}
+	80%{top:-7.5px;}
+	90%{top: 0px;}
+	95%{top:-3px;}
+	100%{top: 0px;}
+}
+
+
+/*右刹车*/
+.right-brake{
+	animation:right-brake-move 1s linear;
+	-webkit-animation:right-brake-move 1s linear; /*Safari and Chrome*/ 
+}
+@keyframes right-brake-move
+{
+	0%{left:-100px;transform: skewX(15deg);}
+	50%{left:-30px;transform: skewX(15deg);}
+	75%{left:20px;transform: skewX(-10deg);}
+	87%{left:-20px;transform: skewX(5deg);}
+	100%{left:0px;transform: skewX(0deg);}
+}
+
+@-webkit-keyframes right-brake-move
+{
+	0%{left:-100px;transform: skewX(15deg);}
+	50%{left:-30px;transform: skewX(15deg);}
+	75%{left:20px;transform: skewX(-10deg);}
+	87%{left:-20px;transform: skewX(5deg);}
+	100%{left:0px;transform: skewX(0deg);}
+}
+
+
+/*左刹车*/
+.left-brake{
+	animation:left-brake-move 1s linear;
+	-webkit-animation:left-brake-move 1s linear; /*Safari and Chrome*/ 
+}
+@keyframes left-brake-move
+{
+	0%{right:-100px;transform: skewX(-15deg);}
+	50%{right:-30px;transform: skewX(-15deg);}
+	75%{right:20px;transform: skewX(10deg);}
+	87%{right:-20px;transform: skewX(-5deg);}
+	100%{right:0px;transform: skewX(0deg);}
+}
+
+@-webkit-keyframes left-brake-move
+{
+	0%{right:-100px;transform: skewX(-15deg);}
+	50%{right:-30px;transform: skewX(-15deg);}
+	75%{right:20px;transform: skewX(10deg);}
+	87%{right:-20px;transform: skewX(-5deg);}
+	100%{right:0px;transform: skewX(0deg);}
+}
+
+
+/*左上角旋转出现*/
+.top-left-rotate{
+	transform-origin: top left; 
+	animation:top-left-rotate-move 0.8s linear;
+	-webkit-animation:top-left-rotate-move 0.8s linear; /*Safari and Chrome*/ 
+}
+@keyframes top-left-rotate-move
+{
+	0%{transform: rotate(90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+@-webkit-keyframes top-left-rotate-move
+{
+	0%{transform: rotate(90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+
+/*左下角旋转出现*/
+.bottom-left-rotate{
+	transform-origin: bottom left; 
+	animation:bottom-left-rotate-move 0.8s linear;
+	-webkit-animation:bottom-left-rotate-move 0.8s linear; /*Safari and Chrome*/ 
+}
+@keyframes bottom-left-rotate-move
+{
+	0%{transform: rotate(-90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+@-webkit-keyframes bottom-left-rotate-move
+{
+	0%{transform: rotate(-90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+/*左上角旋转出现*/
+.top-right-rotate{
+	transform-origin: top right; 
+	animation:top-right-rotate-move 0.8s linear;
+	-webkit-animation:top-right-rotate-move 0.8s linear; /*Safari and Chrome*/ 
+}
+@keyframes top-right-rotate-move
+{
+	0%{transform: rotate(-90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+@-webkit-keyframes top-right-rotate-move
+{
+	0%{transform: rotate(-90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+
+/*左下角旋转出现*/
+.bottom-right-rotate{
+	transform-origin: bottom right; 
+	animation:bottom-right-rotate-move 0.8s linear;
+	-webkit-animation:bottom-right-rotate-move 0.8s linear; /*Safari and Chrome*/ 
+}
+@keyframes bottom-right-rotate-move
+{
+	0%{transform: rotate(90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+@-webkit-keyframes bottom-right-rotate-move
+{
+	0%{transform: rotate(90deg);}
+	100%{transform: rotate(0deg);}
+}
