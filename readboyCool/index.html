@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="viewport" content="" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<title>读书郎招聘</title>
+	<link rel="shortcut icon" href="./favicon.ico" />
+	<link rel="bookmark" href="./favicon.ico" type="image/x-icon"　/>
+	<link rel="stylesheet" href="./css/index.css">	
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--引入pageSlider所需样式表-->
+	<link rel="stylesheet" href="./css/pageSlider.css">
+	<link rel='stylesheet' href='./css/masterslider.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='./css/masterslider.main.css' type='text/css' media='all' />
+	<script type="text/javascript" src="./js/template-web.js"></script>
+</head>
+<body id="content-area">
+</body>
+<script id="tem" type="text/html">
+	<audio src="./img/057940_4d0ba18a1e3caaf9f775af20100abf1f.mp3" loop="loop" autoplay="autoplay" id="vi">
+		Your browser does not support the audio element.
+	</audio>
+	<div id="play"></div>
+	<div class="section sec1">
+		<p class="title">同学请留步</p>
+		<p class="fu-title">我们等你来</p>
+		<div class="joinus">读书郎 <span style="font-size: 0.52rem;font-weight: 600;">招聘啦</span></div>
+		<div class="company"><span class="logo"></span> 读书郎教育科技有限公司</div>
+		<img class="bg" src="./img/page1.gif" />
+		<img class="bg-rotate" src="./img/rotate.gif" />
+		<img class="littlehuman" src="./img/littlehuman.gif"/>
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>
+		</div>
+		<img src="./img/black.png" class="blakc-opacity" />
+	</div>
+	<div class="section sec2">
+		<img class="bg" src="./img/humanNo.gif" />
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>
+		</div>
+	</div>
+	<div class="section sec3">
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>
+		</div>
+	</div>
+	<div class="section sec4">
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>		
+		</div>
+	</div>
+	<div class="section sec5">
+		<div class="pink">
+			<div class="title">
+				<img src="./img/pinktitle.gif" />
+				<p>读书郎教育科技有限公司</p>
+			</div>
+			<div class="content">
+			</div>
+		</div>
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>		
+		</div>
+	</div>
+	<div class="section sec6">
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>		
+		</div>
+	</div>
+	<div class="section sec7">
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>		
+		</div>
+	</div>
+	{{each detailIfo value key}}
+	<div class="section sec{{key+8}}" style="background-color: #df757a;">
+		<div class="pink">
+			<div class="title">
+				<img src="./img/pinktitle.gif" />
+			</div>
+			<div class="content">
+			</div>
+		</div>
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>
+		</div>
+	</div>
+	{{/each}}
+
+	<div class="section" id="callus" style="background-color: #91bab3;">
+	
+	</div>
+
+	<div class="section" id="sec" style="background-color: #df757a;">
+		<div class="pink">
+			<div class="title">
+				<img src="./img/pinktitle.gif" />
+			</div>
+			<div class="content">
+			</div>
+		</div>
+		<div class="maka-Arrow">
+			<img src="./img/up.png"/>
+		</div>
+	</div>
+</script>
+<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--引入zepto.js-->
+<script src="http://cdn.bootcss.com/zepto/1.1.4/zepto.js"></script>
+<!--引入pageSlider.js文件-->
+<script src="./js/pageSlider.js"></script>
+<!-- 翻页 -->
+<script src="./js/modernizr-2.6.2.min.js"></script>
+<script type='text/javascript' src='./js/masterslider.min.js'></script>
+<script type='text/javascript' src='./js/jquery.easing.min.js'></script>
+<script type="text/javascript">
+	var scale = 1 / window.devicePixelRatio;
+    document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+	var pageSlider = PageSlider.case();	
+	//设置页面的高度
+	// var HEIGHT=$("body").height();
+	// var len=$(".section").length;
+	// for(var i=0;i<len;i++){
+	// 	$('.section').eq(i).height(HEIGHT);	
+	// }
+	// var slider = new MasterSlider();
+	// var left=$(".content-wrapper").width();
+	// slider.setup('masterslider' , {
+	// 	width:left,
+	// 	space:0,
+	// 	view:'basic'
+	// });
+</script>
+</html>
