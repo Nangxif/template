@@ -58,9 +58,8 @@
 		</div>
 	</div>
 	<div class="section sec3">
+		<img class="bg" src="./img/page.gif" />
 		<div class="book">
-			<div class="book-left"></div>
-			<div class="book-right"></div>
 			<p>五险一金</p>
 			<p>年底双薪</p>
 		</div>
@@ -69,11 +68,6 @@
 		</div>
 	</div>
 	<div class="section sec4">
-		<div class="maka-Arrow">
-			<img src="./img/up.png"/>		
-		</div>
-	</div>
-	<div class="section sec5">
 		<div class="pink">
 			<div class="title">
 				<img src="./img/pinktitle.gif" />
@@ -96,14 +90,14 @@
 			<img src="./img/up.png"/>		
 		</div>
 	</div>
-	<div class="section sec6">
+	<div class="section sec5">
 		<img src="./img/hou.gif" class="bg" />
 		<p class="joinus">快来加入我们吧！</p>
 		<div class="maka-Arrow">
 			<img src="./img/up.png"/>		
 		</div>
 	</div>
-	<div class="section sec7">
+	<div class="section sec6">
 		<img class="bg" src="./img/click.gif" />
 		<div class="maka-Arrow">
 			<img src="./img/up.png"/>		
@@ -170,7 +164,7 @@
 <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--引入zepto.js-->
-<script src="http://cdn.bootcss.com/zepto/1.1.4/zepto.js"></script>
+<script src="./js/zepto-1.1.4.js"></script>
 <!--引入pageSlider.js文件-->
 <script src="./js/pageSlider.js"></script>
 <!-- 翻页 -->
@@ -189,7 +183,7 @@
 		$('.section').eq(i).height(HEIGHT);	
 	}
 	var slider = new MasterSlider();
-	var left=$(".sec5 .content").width();
+	var left=$(".sec4 .content").width();
 	slider.setup('masterslider' , {
 		width:left,
 		space:0,

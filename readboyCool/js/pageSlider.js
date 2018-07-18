@@ -67,7 +67,7 @@
 	var theTemplateScript = $("#address-template").html();  
 	// 编译模板  
 	Handlebars.registerHelper('formatnumber', function(page, options){
-		var page = page + 8;
+		var page = page + 7;
 		return page;
 	});
 	var theTemplate = Handlebars.compile(theTemplateScript);  
@@ -75,8 +75,8 @@
 	var theCompiledHtml = theTemplate(data);  
 	// 更新到模板  
 	$('#content-area').html(theCompiledHtml);  
-	$("#callus").addClass("sec"+(8+l));
-	$("#sec").addClass("sec"+(9+l));
+	$("#callus").addClass("sec"+(7+l));
+	$("#sec").addClass("sec"+(8+l));
 
 	//判断是否播放
 	var ifplay=1;
