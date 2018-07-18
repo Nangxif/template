@@ -1,6 +1,6 @@
 # Preview Template 
 ------- 
-###P lease preview on mobile devices!<br/>
+### Please preview on mobile devices!<br/>
 ## A link of the template which name readboyFunny<br/>
 [Click Me](https://nangxif.github.io/template/readboyFunny/ "悬停显示")<br/>
 ## A link of the template which name readboyLovely<br/>
