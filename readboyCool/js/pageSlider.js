@@ -61,47 +61,20 @@
 	 * @param {Number} index  The target page number
 	 * @param {string} direction  The direction of the sliding,'next' or 'prev'
 	 */
-	//招聘信息
-	var data={
-		detailIfo:[
-		{
-			"position":"PHP开发工程师",
-			"pay":"7K-10K",
-			"info":{
-				"work":"跟进用户反馈信息，改善网站的功能并提供改善建议；根据开发进度和任务分配，完成相应模块软件的设计，开发、编程任务；代码编写及重构，开发及维护公司官网、商城、论坛、电商及新浪、微信平台；",
-				"need":"具有一年及以上的开发经验,对技术和新技术有强烈的渴望，了解移动设备的网页设计和开发技术；熟悉CI、Yii，至少一种PHP框架.掌握XHTML、CSS、DIV、Javascript等前端技术；精通MVC框架，熟悉面向对象编程，具有PHP缓存技术使用、静态化设计方面的经验者；熟悉数据库，分布式数据存储，以及高流量访问、大用户量级平台系统设计与开发；有数据库优化，大型互联网设计、开发经验者优先。"
-			}
-		},
-		{
-			"position":"Android开发工程师",
-			"pay":"6K-9K",
-			"info":{
-				"work":"无",
-				"need":"计算机相关专业本科毕业；熟悉Android软件开发和手机开发的优先；要求熟悉Android应用开发平台，有网络应用开发经验的优先；了解HTTP、TCP/IP等协议，会使用SQL数据库编程；具备团队精神，并富有工作激情、创新力和责任感。"
-			}
-		},
-		{
-			"position":"C#开发工程师",
-			"pay":"6K-8K",
-			"info":{
-				"work":"负责手机生产测试软件工具的开发、保证工具在产线运行的正确和稳定，以保证产品质量；维护工厂MES系统、生产流程管理系统；负责MTK及高通测试工具（包括下载写号，校准，耦合等工具）进行二次开发，提升产线通用、易用性，提升产线测试效率；负责产线测试工具开发（如线损自动测试工具，SN号检测工具等）。",
-				"need":"熟悉一种主流数据库的使用，了解SQLserver数据库；熟悉VC++、C#编程；有自动化测试经验优先；熟悉工厂MES系统、生产流程管理系统或ERP软件开发者优先；了解adb、有开发手机助手或者刷机工具PC端相关经验的优先，有高通平台工具开发经验的更佳。"
-			}
-		},
-		{
-			"position":"web前端开发工程师",
-			"pay":"7K-9K",
-			"info":{
-				"work":"无",
-				"need":"精通Photoshop，Illustrator，Dreamweaver，flash等绘图及切图制作软件；熟练html5+css3.0，熟悉html的DOM结构，可快速制作html页面；熟悉原生javascript，熟悉jQuery框架，熟悉mvvm框架或其他流行的开源js框架并且对于建立js框架，有自己的想法优先；熟悉常见的浏览器的特点和限制，熟悉W3C相关标准和Web常用协议、图片文件格式等；有进行过APP内嵌web开发的优先。"
-			}
-		}
-	]
-	};
 	//生成相应的界面
-	var l=data["detailIfo"].length;
-	var html = template('tem', data);
-	$('#content-area').html(html);
+	var l=data["pagecontent"].length;
+	// 抓取模板数据  
+	var theTemplateScript = $("#address-template").html();  
+	// 编译模板  
+	Handlebars.registerHelper('formatnumber', function(page, options){
+		var page = page + 8;
+		return page;
+	});
+	var theTemplate = Handlebars.compile(theTemplateScript);  
+	// 把数据传送到模板  
+	var theCompiledHtml = theTemplate(data);  
+	// 更新到模板  
+	$('#content-area').html(theCompiledHtml);  
 	$("#callus").addClass("sec"+(8+l));
 	$("#sec").addClass("sec"+(9+l));
 

@@ -21,6 +21,7 @@
 .inner{
 	position: absolute; 
 	width: 100%;
+	height: 100%;
 	z-index: 1;
 }
 .title{
@@ -52,7 +53,7 @@
 	position: absolute !important;
 	left:0rem;
 	right: 0rem;
-	top: 2.5rem;
+	top: 2rem;
 	width: 6rem;
 	z-index: 2;
 }
@@ -61,7 +62,7 @@
 	margin: 0 auto;
 	margin-top: 0.2rem;
 	width: 5.5rem;
-	height: 9rem;
+	height: 67%;
 	background-color: #ffffff;
 }
 .content-wrap .title{
@@ -75,7 +76,7 @@
 .content-wrap h5{
 	margin-top: 0.2rem;
 	margin-bottom: 0.2rem;
-	font-size: 0.34rem;
+	font-size: 0.3rem;
 }
 .content-wrap h5 .list-ico{
 	display: inline-block;
@@ -91,15 +92,15 @@
 }
 .content-wrap .type{
 	margin-left: 0.25rem;
-	font-size: 0.26rem;
+	font-size: 0.23rem;
 }
 .content-wrap .need{
 	margin-left: 0.4rem;
-	font-size: 0.26rem;
+	font-size: 0.23rem;
 }
 .content-wrap .work{
 	margin-left: 0.4rem;
-	font-size: 0.26rem;
+	font-size: 0.23rem;
 }
 /*播放按钮*/
 #play{
@@ -821,7 +822,7 @@
 	position: absolute;
 	left: 0rem;
 	right: 0rem;
-	top: 2.3rem;
+	top: 1.8rem;
 	width: 6.4rem;
 	height: 4.4rem;
 	background-color: white;
@@ -947,8 +948,7 @@
 	left: 0rem;
 	right: 0rem;
 	bottom: 0rem;
-	width: 6.58rem;
-	height: 4.94rem;
+	width: 80.73%;
 	opacity: 0;
 	transform: scale(0);
 }
@@ -1038,7 +1038,7 @@
 }
 
 .titles{
-	margin-top: 1.6rem;
+	margin-top: 1.25rem;
 	color: #ffffff;
 	border: 3px white solid;
 	transform: scale(0);
@@ -1057,7 +1057,7 @@
 	position: absolute;
 	left:0rem;
 	right: 0rem;
-	top: 1.6rem;
+	top: 1.25rem;
 	color: #ffffff;
 	width: 2.8rem;
 	height: 0.8rem;
@@ -1164,7 +1164,8 @@
 	100%{opacity: 1;transform: rotateY(0deg);}
 }
 #callus .mail{
-	margin-top: 9.5rem;
+	position: absolute;
+	bottom: 2rem;
 	width: 100%;
 	opacity: 0;
 }
@@ -1179,22 +1180,22 @@
 @keyframes mail_m{
 	from{
 		opacity: 0;
-		margin-top:9.5rem; 
+		bottom: 2rem; 
 	}
 	to{
 		opacity: 1;
-		margin-top:8.5rem;
+		bottom:3.4rem;
 	}
 }
 
 @-webkit-keyframes mail_m{
 	from{
 		opacity: 0;
-		margin-top:9.5rem; 
+		bottom: 2rem; 
 	}
 	to{
 		opacity: 1;
-		margin-top:8.5rem;
+		bottom:3.4rem;
 	}
 }
 
@@ -1211,9 +1212,8 @@
 	position: absolute;
 	left: 0rem;
 	right: 0rem;
-	bottom: 0rem;
-	width: 6.58rem;
-	height: 4.94rem;
+	bottom: -1rem;
+	width: 87%;
 	opacity: 0;
 	transform: scale(0);
 }

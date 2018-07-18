@@ -10,58 +10,14 @@
 	overflow: hidden;
 }
 .content-wrapper{
-	margin:auto;
-	position: absolute !important;
-	left:0rem;
-	right: 0rem;
-	top: 2.5rem;
-	width: 6rem;
-	z-index: 2;
+	margin:0.3rem;
+	width: auto;
+	line-height: 0.46rem;
+	font-size: 0.3rem;
 }
-.content-wrap{
-	padding: 0.2rem;
-	margin: 0 auto;
-	margin-top: 0.2rem;
-	width: 5.5rem;
-	height: 9rem;
-	background-color: #ffffff;
-}
-.content-wrap .title{
-	height: 0.6rem;
-	line-height: 0.6rem;
-	text-align: center;
-	font-size: 0.36rem;
-	border:2px #3d3d3d solid;
-	border-bottom: 1px #3d3d3d solid;
-}
-.content-wrap h5{
-	margin-top: 0.2rem;
-	margin-bottom: 0.2rem;
+.content-wrapper p{
 	font-size: 0.34rem;
-}
-.content-wrap h5 .list-ico{
-	display: inline-block;
-	margin-right: 0.1rem;
-	margin-top: 0.02rem;
-	width: 0.32rem;
-	height: 0.32rem;
-	vertical-align: top;
-	background-image: url("../img/list.src");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	transform:scale(1);
-}
-.content-wrap .type{
-	margin-left: 0.25rem;
-	font-size: 0.26rem;
-}
-.content-wrap .need{
-	margin-left: 0.4rem;
-	font-size: 0.26rem;
-}
-.content-wrap .work{
-	margin-left: 0.4rem;
-	font-size: 0.26rem;
+	font-weight: 600;
 }
 /*播放按钮*/
 #play{
@@ -148,11 +104,12 @@
 	height: 0.75rem;
 	line-height: 0.75rem;
 	font-size: 0.36rem;
+	font-weight: 600;
 	z-index: 1;
 }
 .pink .content{
 	margin:auto;
-	position: absolute;
+	position: absolute !important;
 	left: 0rem;
 	right: 0rem;
 	top: 1.8rem;
@@ -160,7 +117,7 @@
 	width: 6.5rem;
 	background-color: white;
 }
-.blakc-opacity{
+.black-opacity{
 	margin: auto;
 	position: absolute;
 	left: -37.5rem;
@@ -262,11 +219,93 @@
 	height:84%;
 	z-index: 1;
 }
+.sec2 .q1{
+	position: absolute;	
+	left: 0.2rem;
+	top: 3.1rem;
+	color: white;
+	font-size: 0.3rem;
+	z-index: 2;
+}
+.sec2 .q2{
+	position: absolute;
+	top: 2.4rem;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 0.3rem;
+	z-index: 2;
+}
+.sec2 .q3{
+	position: absolute;
+	right: 0.2rem;
+	top: 3.1rem;
+	color: white;
+	font-size: 0.3rem;
+	z-index: 2;
+}
+.sec2 .goodbye{
+	position: absolute;
+	bottom: 4rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.4rem;
+	z-index: 2;
+}
+.sec2 .comeon{
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.6rem;
+	font-weight: 700;
+	z-index: 2;
+	color: white;
+}
+
 /*第三页样式*/
 .sec3{
 	background-color: #ddc372 !important;
 }
-
+.sec3 .book{
+	margin: 0 auto;
+	position: relative;
+	margin-top: 4rem;
+	width: 4rem;
+	height: 3rem;
+	background-color: #f3a1a1;
+	border-radius: 10px;
+}
+.sec3 .book .book-left{
+	position: absolute;
+	left: 0.6rem;
+	top: -0.3rem;
+	width: 0.5rem;
+	height: 0.8rem;
+	background-color:#ec4c4d; 
+	border-radius:10px;
+}
+.sec3 .book .book-right{
+	position: absolute;
+	right: 0.6rem;
+	top: -0.3rem;
+	width: 0.5rem;
+	height: 0.8rem;
+	background-color:#ec4c4d; 
+	border-radius:10px;
+}
+.sec3 .book p{
+	position: absolute;
+	top: 0.8rem;
+	width:100%;
+	text-align: center;
+	font-size: 0.5rem;
+	color: white;
+}
+.sec3 .book p:last-child{
+	top: 1.8rem;
+	
+}
 
 /*第四页样式*/
 .sec4{
@@ -279,239 +318,78 @@
 .sec5{
 	background-color: #df757a !important;
 }
-
+.sec5 .master{
+	position: absolute !important;
+	bottom: 0rem;
+	width: 100%;
+	height: 6rem;
+}
+#masterslider{
+	box-sizing: content-box;
+}
+.ms-view{
+	width: 100% !important;
+	height: 4rem !important;
+	background:inherit !important;
+}
+.ms-slide-container,.ms-slide{
+	width: 100% !important;
+	height: 100% !important;
+}
+.ms-slide-bgcont img{
+	margin:0rem !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+.sec5 .master .logo{
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	height: 1rem;
+	text-align: center;
+}
+.sec5 .master .logo img{
+	height: 100%;
+}
+.sec5 .master .text{
+	font-size: 0.26rem;
+	text-align: center;
+}
 /*第六页样式*/
 .sec6{
 	background-color: #90b9b2 !important;
 }
 
+.sec6 .bg{
+	display: block;
+	position: absolute;
+	left: -4.12rem;
+	top: 1rem;
+	width: 210%;
+	height:69%;
+	z-index: 1;
+}
+.sec6 .joinus{
+	position: absolute;
+	bottom: 3rem;
+	width:100%;
+	text-align: center;
+	font-size:0.36rem;
+	color: white;
+	z-index: 2;
+}
 /*第七页样式*/
 .sec7{
-	background-color: #e1dfdd !important;
+	background-color: #dcdcdc !important;
 }
-
-/*我们需要*/
-/*所有变大的动画*/
-@keyframes large{0%{transform:scale(0);opacity: 0;}50%{transform:scale(1.1);opacity: 1;}80%{transform:scale(0.8);opacity: 1;}100%{transform:scale(1);opacity: 1;}}
-@-webkit-keyframes large{0%{transform:scale(0);opacity: 0;}50%{transform:scale(1.1);opacity: 1;}80%{transform:scale(0.8);opacity: 1;}100%{transform:scale(1);opacity: 1;}}
-.bglarge{
-	animation: large 0.7s linear;-webkit-animation: large 0.7s linear;animation-delay:0.2s;-webkit-animation-delay:0.2s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;
-}
-@keyframes kt-large{0%{transform:scale(0);opacity: 0;}100%{transform:scale(1);opacity: 1;}}
-@-webkit-keyframes kt-large{0%{transform:scale(0);opacity: 0;}100%{transform:scale(1);opacity: 1;}}
-.kuanlarge{
-	animation: kt-large 0.7s linear;-webkit-animation: kt-large 0.7s linear;animation-delay:0.8s;-webkit-animation-delay:0.8s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;
-}
-.textlarge{
-	animation: kt-large 0.7s linear;-webkit-animation: kt-large 0.7s linear;animation-delay:1.4s;-webkit-animation-delay:1.4s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;
-}
-
-.titles{
-	margin-top: 1.6rem;
-	color: #ffffff;
-	border: 3px white solid;
-	transform: scale(0);
-	opacity: 0;
-}
-.positionbg{
-	width: 100%;
-	height: 100%;
+.sec7 .bg{
+	display: block;
 	position: absolute;
-	z-index: 0;
-	opacity: 0;
-	transform: scale(0);
-}
-.titles-content{
-	margin:auto;
-	position: absolute;
-	left:0rem;
-	right: 0rem;
-	top: 1.6rem;
-	color: #ffffff;
-	width: 2.8rem;
-	height: 0.8rem;
-	line-height: 0.8rem;
-	font-size: 0.38rem;
-	text-align: center;
-	opacity: 0;
-	transform: scale(0);
-}
-.cws{
-	opacity: 0;
-	margin-top: 2rem;
-}
-.cws_move{
-	animation: cws_m 1s linear;
-	-webkit-animation: cws_m 1s linear;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	animation-delay:2s;
-	-webkit-animation-delay:2s;
-}
-@keyframes cws_m{
-	from{
-		opacity: 0;
-		margin-top:2rem; 
-	}
-	to{
-		opacity: 1;
-		margin-top:0.2rem;
-	}
+	left: -20%;
+	top: 0rem;
+	width: 140%;
+	z-index: 1;
 }
 
-@-webkit-keyframes cws_m{
-	from{
-		opacity: 0;
-		margin-top:2rem; 
-	}
-	to{
-		opacity: 1;
-		margin-top:0.2rem;
-	}
-}
-
-
-
-
-
-
-
-/*加入我们*/
-.left-line{
-	position: absolute;
-	left: 2.3rem;/*0rem*/
-	top: 0.38rem;/*1.1rem*/
-	width: 4rem;/*2rem*/
-	height:0px;
-	border: 3px white solid;
-	transform: rotate(-20deg);
-	font-size: 0px;
-	opacity: 0;
-}
-.right-line{
-	position: absolute;
-	right: -1.92rem;/*-0.02rem*/
-	top: -0.33rem;/*0.35rem*/
-	width: 4rem;
-	height:0px;
-	border: 3px white solid;
-	transform: rotate(-20deg);
-	font-size: 0px;
-	opacity: 0;
-}
-#callus .content{
-	position: absolute;
-	background-image: url("../img/callus.png");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	z-index: 2;
-	transform: rotateY(30deg);
-	opacity: 0;
-}
-/*淡入之后左右摇摆*/
-.bg-fadein-swing{
-	animation:bg-fadein-swing-move 0.7s linear;
-	-webkit-animation:bg-fadein-swing-move 0.7s linear; /*Safari and Chrome*/ 
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	animation-delay:0.6s;
-	-webkit-animation-delay:0.6s;
-}
-@keyframes bg-fadein-swing-move
-{
-	0% {opacity:0;transform: rotateY(60deg);}
-	33%{opacity: 0.33;transform: rotateY(-60deg);}
-	66%{opacity: 0.66;transform: rotateY(60deg);}
-	100%{opacity: 1;transform: rotateY(0deg);}
-}
-
-@-webkit-keyframes bg-fadein-swing-move
-{
-	0% {opacity:0;transform: rotateY(60deg);}
-	33%{opacity: 0.33;transform: rotateY(-60deg);}
-	66%{opacity: 0.66;transform: rotateY(60deg);}
-	100%{opacity: 1;transform: rotateY(0deg);}
-}
-#callus .mail{
-	margin-top: 9.5rem;
-	width: 100%;
-	opacity: 0;
-}
-.mail_move{
-	animation: mail_m 1s linear;
-	-webkit-animation: mail_m 1s linear;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	animation-delay:1.4s;
-	-webkit-animation-delay:1.4s;
-}
-@keyframes mail_m{
-	from{
-		opacity: 0;
-		margin-top:9.5rem; 
-	}
-	to{
-		opacity: 1;
-		margin-top:8.5rem;
-	}
-}
-
-@-webkit-keyframes mail_m{
-	from{
-		opacity: 0;
-		margin-top:9.5rem; 
-	}
-	to{
-		opacity: 1;
-		margin-top:8.5rem;
-	}
-}
-
-
-
-#callus .content p{
-	width: 100%;
-	font-size: 0.3rem;
-	color: white;
-	text-align:center;
-}
-.ship{
-	margin:auto;
-	position: absolute;
-	left: 0rem;
-	right: 0rem;
-	bottom: 0rem;
-	width: 6.58rem;
-	height: 4.94rem;
-	opacity: 0;
-	transform: scale(0);
-}
-.ship-move{
-	animation: ship-m 0.6s linear;
-	-webkit-animation: ship-m 0.6s linear;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-}
-@keyframes ship-m{
-	from{
-		transform:scale(0);
-		opacity: 0; 
-	}
-	to{
-		transform:scale(1);
-		opacity: 1;
-	}
-}
-@-webkit-keyframes ship-m{
-	from{
-		transform:scale(0);
-		opacity: 0; 
-	}
-	to{
-		transform:scale(1);
-		opacity: 1;
-	}
-}
 /*第八页样式*/
 /*淡入动画*/
 .fadeIn{
@@ -534,7 +412,13 @@
 	width: 5rem;
 	font-size:0px; 
 	z-index: 5;
-	opacity: 0;
+}
+.upload label{
+	font-size: 0.32rem;
+	color: #4b4b4b;
+}
+.upload label span{
+	color: #eb8383;
 }
 .upload input{
 	margin-top: 0.2rem;
@@ -546,7 +430,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	height: 0.8rem;
-	border:1.17063px solid rgb(24, 204, 192);
+	border:1.17063px solid #eb8383;
 	border-radius: 10px;
 }
 .upload button{
@@ -554,19 +438,9 @@
 	height: 0.8rem;
 	border-radius: 10px;
 	color: white;
-	background-color: rgb(24, 204, 192);
-	border:1.17063px solid rgb(24, 204, 192);
+	background-color: #eb8383;
+	border:1.17063px solid #eb8383;
 	font-size: 0.3rem;
-}
-.lu{
-	margin:auto;
-	position: absolute;
-	left: 0rem;
-	right: 0rem;
-	bottom: 0rem;
-	width: 6.58rem;
-	height: 4.94rem;
-	opacity: 0;
 }
 .sectitles{
 	margin-top: 0.6rem;

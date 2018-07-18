@@ -63,9 +63,20 @@
 	 */
 	
 	//生成相应的界面
-	var l=data["pageContent"].length;
-	var html = template('tem', data);
-	$('#content-area').html(html);
+	var l=data["pagecontent"].length;
+	// 抓取模板数据  
+	var theTemplateScript = $("#address-template").html();  
+	// 编译模板  
+	Handlebars.registerHelper('formatnumber', function(page, options){
+		var page = page + 5;
+		return page;
+	});
+	var theTemplate = Handlebars.compile(theTemplateScript);  
+	// 把数据传送到模板  
+	var theCompiledHtml = theTemplate(data);  
+	// 更新到模板  
+	$('#content-area').html(theCompiledHtml);  
+
 	$("#callus").addClass("sec"+(5+l));
 	$("#sec").addClass("sec"+(6+l));
 
@@ -155,12 +166,31 @@
 					clearTimeout(showTimer);
 				},1500);
 			}else{
-				$(".tip").text("提交成功");
-				$(".tip").addClass("show");
-				showTimer=setTimeout(function(){
-					$(".tip").removeClass("show");
-					clearTimeout(showTimer);
-				},1500);
+				$.ajax({
+					url:"",
+					data:{
+						name:$("#name").val(),
+						position:$("#position").val(),
+						tel:$("#tel").val(),
+						introduce:$("#introduce").val()
+					},
+					success:function(){
+						$(".tip").text("提交成功");
+						$(".tip").addClass("show");
+						showTimer=setTimeout(function(){
+							$(".tip").removeClass("show");
+							clearTimeout(showTimer);
+						},1500);
+					},
+					error:function(){
+						$(".tip").text("提交失败");
+						$(".tip").addClass("show");
+						showTimer=setTimeout(function(){
+							$(".tip").removeClass("show");
+							clearTimeout(showTimer);
+						},1500);
+					}
+				})
 			}
 		}
 	})
