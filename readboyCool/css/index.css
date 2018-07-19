@@ -119,14 +119,40 @@
 }
 .black-opacity{
 	margin: auto;
+	display: block;
 	position: absolute;
-	left: -37.5rem;
+	left: -71.3rem;
+	right: 0rem;
 	top: 0rem;
 	bottom: 0rem;
 	width: 150rem;
 	height: 150rem;
 	z-index: 4;
 	transform: scale(0.1);
+}
+.black-opacity-move{
+	animation: black-opacity-m 1.2s linear;
+	-webkit-animation: black-opacity-m 1.2s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes black-opacity-m{
+	from{
+		transform: scale(0.1);
+	}
+	to{
+		transform: scale(2.1);
+		display: none;
+	}
+}
+@-webkit-keyframes black-opacity-m{
+	from{
+		transform: scale(0.1);
+	}
+	to{
+		transform: scale(2.1);
+		display: none;
+	}
 }
 
 /*第一页样式*/
@@ -221,11 +247,28 @@
 }
 .sec2 .q1{
 	position: absolute;	
-	left: 0.2rem;
+	left: 4.2rem;
 	top: 3.1rem;
 	color: white;
 	font-size: 0.3rem;
 	z-index: 2;
+	opacity: 0;
+}
+.q1-move{
+	animation: q1-m 0.9s linear;
+	-webkit-animation: q1-m 0.9s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay:0.9s;
+	-webkit-animation-delay:0.9s;
+}
+@keyframes q1-m{
+	0%{left: 4.2rem;opacity: 0;}
+	100%{left: 0.2rem;opacity: 1;}
+}
+@-webkit-keyframes q1-m{
+	0%{left: 4.2rem;opacity: 0;}
+	100%{left: 0.2rem;opacity: 1;}
 }
 .sec2 .q2{
 	position: absolute;
@@ -235,14 +278,50 @@
 	color: white;
 	font-size: 0.3rem;
 	z-index: 2;
+	transform: scale(0.5);
+}
+.q2-move{
+	animation: q2-m 0.9s linear;
+	-webkit-animation: q2-m 0.9s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes q2-m{
+	0%{transform: scale(0.5);}
+	70%{transform: scale(1.2);}
+	85%{transform: scale(0.8);}
+	100%{transform: scale(1);}
+}
+@-webkit-keyframes q2-m{
+	0%{transform: scale(0.5);}
+	70%{transform: scale(1.2);}
+	85%{transform: scale(0.8);}
+	100%{transform: scale(1);}
 }
 .sec2 .q3{
 	position: absolute;
-	right: 0.2rem;
+	right: 4.2rem;
 	top: 3.1rem;
 	color: white;
 	font-size: 0.3rem;
 	z-index: 2;
+	opacity: 0;
+}
+.q3-move{
+	animation: q3-m 0.9s linear;
+	-webkit-animation: q3-m 0.9s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay:0.9s;
+	-webkit-animation-delay:0.9s;
+}
+@keyframes q3-m{
+	0%{right: 4.2rem;opacity: 0;}
+	100%{right: 0.2rem;opacity: 1;}
+}
+@-webkit-keyframes q3-m{
+	0%{right: 4.2rem;opacity: 0;}
+	100%{right: 0.2rem;opacity: 1;}
 }
 .sec2 .goodbye{
 	position: absolute;
@@ -251,7 +330,30 @@
 	text-align: center;
 	font-size: 0.4rem;
 	z-index: 2;
+	transform: scale(0.5);
+	opacity: 0;
 }
+.goodbye-move{
+	animation: goodbye-m 0.9s linear;
+	-webkit-animation: goodbye-m 0.9s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay:1.8s;
+	-webkit-animation-delay:1.8s;
+}
+@keyframes goodbye-m{
+	0%{transform: scale(0.5);opacity: 0;}
+	70%{transform: scale(1.2);}
+	85%{transform: scale(0.8);}
+	100%{transform: scale(1);opacity: 1;}
+}
+@-webkit-keyframes goodbye-m{
+	0%{transform: scale(0.5);opacity: 0;}
+	70%{transform: scale(1.2);}
+	85%{transform: scale(0.8);}
+	100%{transform: scale(1);opacity: 1;}
+}
+
 .sec2 .comeon{
 	position: absolute;
 	bottom: 2rem;
@@ -261,6 +363,28 @@
 	font-weight: 700;
 	z-index: 2;
 	color: white;
+	transform: scale(1.2);
+	opacity: 0;
+}
+.comeon-move{
+	animation: comeon-m 0.9s linear;
+	-webkit-animation: comeon-m 0.9s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay:2.7s;
+	-webkit-animation-delay:2.7s;
+}
+@keyframes comeon-m{
+	0%{transform: scale(1.2);opacity: 0;}
+	70%{transform: scale(0.8);}
+	85%{transform: scale(1.1);}
+	100%{transform: scale(1);opacity: 1;}
+}
+@-webkit-keyframes comeon-m{
+	0%{transform: scale(1.2);opacity: 0;}
+	70%{transform: scale(0.8);}
+	85%{transform: scale(1.1);}
+	100%{transform: scale(1);opacity: 1;}
 }
 
 /*第三页样式*/
@@ -282,7 +406,7 @@
 	width: 4rem;
 	height: 3rem;
 }
-.sec3 .book p{
+.sec3 .book .book1,.sec3 .book .book3,.sec3 .book .book5,.sec3 .book .book7{
 	position: absolute;
 	top: 0.8rem;
 	width:100%;
@@ -290,11 +414,99 @@
 	font-size: 0.5rem;
 	color: white;
 	z-index: 2;
+	opacity: 0;
 }
-.sec3 .book p:last-child{
+.sec3 .book .book2,.sec3 .book .book4,.sec3 .book .book6,.sec3 .book .book8{
+	position: absolute;
 	top: 1.8rem;
-	
+	width:100%;
+	text-align: center;
+	font-size: 0.5rem;
+	color: white;
+	z-index: 2;
+	opacity: 0;
 }
+.book1-move{animation: book1-m 1s linear;-webkit-animation: book1-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
+@keyframes book1-m{0%{opacity: 0; top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book1-m{0%{opacity: 0;top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+.book2-move{animation: book2-m 1s linear;-webkit-animation: book2-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
+@keyframes book2-m{0%{opacity: 0; top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book2-m{0%{opacity: 0;top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+.book3-move{animation: book3-m 1s linear;-webkit-animation: book3-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:1s;-webkit-animation-delay:1s;}
+@keyframes book3-m{0%{opacity: 0; top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book3-m{0%{opacity: 0;top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+.book4-move{animation: book4-m 1s linear;-webkit-animation: book4-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:1s;-webkit-animation-delay:1s;}
+@keyframes book4-m{0%{opacity: 0; top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book4-m{0%{opacity: 0;top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+.book5-move{animation: book5-m 1s linear;-webkit-animation: book5-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:2s;-webkit-animation-delay:2s;}
+@keyframes book5-m{0%{opacity: 0; top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book5-m{0%{opacity: 0;top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+.book6-move{animation: book6-m 1s linear;-webkit-animation: book6-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:2s;-webkit-animation-delay:2s;}
+@keyframes book6-m{0%{opacity: 0; top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book6-m{0%{opacity: 0;top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+.book7-move{animation: book7-m 1s linear;-webkit-animation: book7-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:3s;-webkit-animation-delay:3s;}
+@keyframes book7-m{0%{opacity: 0; top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book7-m{0%{opacity: 0;top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
+.book8-move{animation: book8-m 1s linear;-webkit-animation: book8-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:3s;-webkit-animation-delay:3s;}
+@keyframes book8-m{0%{opacity: 0; top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+@-webkit-keyframes book8-m{0%{opacity: 0;top: 2.7rem;}50%{opacity: 1;top: 1.8rem;}90%{opacity: 1;top: 1.8rem;}100%{opacity: 0;}}
+.sec3 .book .books1{
+	position: absolute;
+	left: 0rem;
+	top: 0.7rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.36rem;
+	color: white;
+	z-index: 4;
+	opacity: 0;
+}
+.sec3 .book .books2{
+	position: absolute;
+	right: 0rem;
+	top: 1.2rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.36rem;
+	color: white;
+	z-index: 4;
+	opacity: 0;
+}
+.sec3 .book .books3{
+	position: absolute;
+	left: 0rem;
+	top: 1.7rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.36rem;
+	color: white;
+	z-index: 4;
+	opacity: 0;
+}
+.sec3 .book .books4{
+	position: absolute;
+	right: 0rem;
+	top: 2.2rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.36rem;
+	color: white;
+	z-index: 4;	
+	opacity: 0;
+}
+.books1-move{animation: books1-m 0.7s linear;-webkit-animation: books1-m 0.7s linear;animation-delay:4s;-webkit-animation-delay:4s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
+@keyframes books1-m{0%{opacity: 0; left: -1.5rem;}100%{opacity: 1;left: 0rem;}}
+@-webkit-keyframes books1-m{0%{opacity: 0;left: -1.5rem;}100%{opacity: 1;left: 0rem;}}
+.books2-move{animation: books2-m 0.7s linear;-webkit-animation: books2-m 0.7s linear;animation-delay:4.5s;-webkit-animation-delay:4.5s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
+@keyframes books2-m{0%{opacity: 0; right: -1.5rem;}100%{opacity: 1;right: 0rem;}}
+@-webkit-keyframes books2-m{0%{opacity: 0;right: -1.5rem;}100%{opacity: 1;right: 0rem;}}
+.books3-move{animation: books3-m 0.7s linear;-webkit-animation: books3-m 0.7s linear;animation-delay:5s;-webkit-animation-delay:5s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
+@keyframes books3-m{0%{opacity: 0; left: -1.5rem;}100%{opacity: 1;left: 0rem;}}
+@-webkit-keyframes books3-m{0%{opacity: 0;left: -1.5rem;}100%{opacity: 1;left: 0rem;}}
+.books4-move{animation: books4-m 0.7s linear;-webkit-animation: books4-m 0.7s linear;animation-delay:5.5s;-webkit-animation-delay:5.5s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
+@keyframes books4-m{0%{opacity: 0; right: -1.5rem;}100%{opacity: 1;right: 0rem;}}
+@-webkit-keyframes books4-m{0%{opacity: 0;right: -1.5rem;}100%{opacity: 1;right: 0rem;}}
+
 
 /*第四页样式*/
 .sec4{
@@ -370,6 +582,42 @@
 	top: 0rem;
 	width: 140%;
 	z-index: 1;
+}
+.sec6 .all-position{
+	margin:auto;
+	position: absolute !important;
+	left: 0rem;
+	right: 0rem;
+	top: 6.2rem;
+	bottom: 0.5rem;
+	width: 6.5rem;
+	font-size: 0px;
+}
+.sec6 .all-position .alltip{
+	display: flex;
+	margin-bottom: 0.4rem;
+	margin-right: 1%;
+	float: left;
+	width: 49%;
+	height: 0.65rem;
+	border:0.04rem solid black;
+	font-size: 0.27rem;
+}
+.sec6 .all-position .alltip .icon{
+	flex: 0 0 0.65rem;
+	width: 0.65rem;
+	height: 100%;
+	border-right:0.04rem solid black;
+	background-color:black; 
+}
+.sec6 .all-position .alltip .icon img{
+	width: 100%;
+	height: 100%;
+}
+.sec6 .all-position .alltip .tipcontent{
+	flex: 1;
+	height: 100%;
+	line-height: 0.65rem;
 }
 
 /*第八页样式*/

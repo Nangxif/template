@@ -201,13 +201,96 @@
 			cur = index == totalSec ? 1 : (index + 1);
 			next = cur == totalSec ? (this.opt.loop ? 1 : 0) : (cur + 1);
 			prev = index;
+			$(".sec1 .black-opacity").removeClass("black-opacity-move");
+			if(cur==2){
+				$(".sec2 .q1").addClass("q1-move");
+				$(".sec2 .q2").addClass("q2-move");
+				$(".sec2 .q3").addClass("q3-move");
+				$(".sec2 .goodbye").addClass("goodbye-move");
+				$(".sec2 .comeon").addClass("comeon-move");
+			}else{
+				$(".sec2 .q1").removeClass("q1-move");
+				$(".sec2 .q2").removeClass("q2-move");
+				$(".sec2 .q3").removeClass("q3-move");
+				$(".sec2 .goodbye").removeClass("goodbye-move");
+				$(".sec2 .comeon").removeClass("comeon-move");
+			}
+			if(cur==3){
+				$(".sec3 .book .book1").addClass("book1-move");
+				$(".sec3 .book .book2").addClass("book2-move");
+				$(".sec3 .book .book3").addClass("book3-move");
+				$(".sec3 .book .book4").addClass("book4-move");
+				$(".sec3 .book .book5").addClass("book5-move");
+				$(".sec3 .book .book6").addClass("book6-move");
+				$(".sec3 .book .book7").addClass("book7-move");
+				$(".sec3 .book .book8").addClass("book8-move");
+				$(".sec3 .book .books1").addClass("books1-move");
+				$(".sec3 .book .books2").addClass("books2-move");
+				$(".sec3 .book .books3").addClass("books3-move");
+				$(".sec3 .book .books4").addClass("books4-move");
+			}else{
+				$(".sec3 .book .book1").removeClass("book1-move");
+				$(".sec3 .book .book2").removeClass("book2-move");
+				$(".sec3 .book .book3").removeClass("book3-move");
+				$(".sec3 .book .book4").removeClass("book4-move");
+				$(".sec3 .book .book5").removeClass("book5-move");
+				$(".sec3 .book .book6").removeClass("book6-move");
+				$(".sec3 .book .book7").removeClass("book7-move");
+				$(".sec3 .book .book8").removeClass("book8-move");
+				$(".sec3 .book .books1").removeClass("books1-move");
+				$(".sec3 .book .books2").removeClass("books2-move");
+				$(".sec3 .book .books3").removeClass("books3-move");
+				$(".sec3 .book .books4").removeClass("books4-move");
+			}
 		} else if (direction == 'prev') {
 			$("#name,#tel,#position,#introduce").blur();//当不在最后一页的时候，手机的软键盘收起
+			$(".sec1 .black-opacity").addClass("black-opacity-move");
 			cur = index == 1 ? totalSec : (index - 1);
 			next = index;
 			prev = cur == 1 ? (this.opt.loop ? totalSec : 0) : (cur - 1);
+			if(cur==2){
+				$(".sec2 .q1").addClass("q1-move");
+				$(".sec2 .q2").addClass("q2-move");
+				$(".sec2 .q3").addClass("q3-move");
+				$(".sec2 .goodbye").addClass("goodbye-move");
+				$(".sec2 .comeon").addClass("comeon-move");
+			}else{
+				$(".sec2 .q1").removeClass("q1-move");
+				$(".sec2 .q2").removeClass("q2-move");
+				$(".sec2 .q3").removeClass("q3-move");
+				$(".sec2 .goodbye").removeClass("goodbye-move");
+				$(".sec2 .comeon").removeClass("comeon-move");
+			}
+			if(cur==3){
+				$(".sec3 .book .book1").addClass("book1-move");
+				$(".sec3 .book .book2").addClass("book2-move");
+				$(".sec3 .book .book3").addClass("book3-move");
+				$(".sec3 .book .book4").addClass("book4-move");
+				$(".sec3 .book .book5").addClass("book5-move");
+				$(".sec3 .book .book6").addClass("book6-move");
+				$(".sec3 .book .book7").addClass("book7-move");
+				$(".sec3 .book .book8").addClass("book8-move");
+				$(".sec3 .book .books1").addClass("books1-move");
+				$(".sec3 .book .books2").addClass("books2-move");
+				$(".sec3 .book .books3").addClass("books3-move");
+				$(".sec3 .book .books4").addClass("books4-move");
+			}else{
+				$(".sec3 .book .book1").removeClass("book1-move");
+				$(".sec3 .book .book2").removeClass("book2-move");
+				$(".sec3 .book .book3").removeClass("book3-move");
+				$(".sec3 .book .book4").removeClass("book4-move");
+				$(".sec3 .book .book5").removeClass("book5-move");
+				$(".sec3 .book .book6").removeClass("book6-move");
+				$(".sec3 .book .book7").removeClass("book7-move");
+				$(".sec3 .book .book8").removeClass("book8-move");
+				$(".sec3 .book .books1").removeClass("books1-move");
+				$(".sec3 .book .books2").removeClass("books2-move");
+				$(".sec3 .book .books3").removeClass("books3-move");
+				$(".sec3 .book .books4").removeClass("books4-move");
+			}
 		} else {
 			$("#name,#tel,#position,#introduce").blur();
+			$(".sec1 .black-opacity").addClass("black-opacity-move");
 			cur = index;
 			next = index == totalSec ? (this.opt.loop ? 1 : 0) : (index + 1);
 			prev = index == 1 ? (this.opt.loop ? totalSec : 0) : (index - 1);

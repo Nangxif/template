@@ -60,8 +60,18 @@
 	<div class="section sec3">
 		<img class="bg" src="./img/page.gif" />
 		<div class="book">
-			<p>五险一金</p>
-			<p>年底双薪</p>
+			<p class="book1">五险一金</p>
+			<p class="book2">年底双薪</p>
+			<p class="book3">提供住宿</p>
+			<p class="book4">膳食补贴</p>
+			<p class="book5">生日问候</p>
+			<p class="book6">节日福利</p>
+			<p class="book7">活动聚会</p>
+			<p class="book8">加班补助</p>
+			<p class="books1">五险一金/年底双薪</p>
+			<p class="books2">提供住宿/膳食补贴</p>
+			<p class="books3">生日问候/节日福利</p>
+			<p class="books4">活动聚会/加班补助</p>
 		</div>
 		<div class="maka-Arrow">
 			<img src="./img/up.png"/>
@@ -99,6 +109,11 @@
 	</div>
 	<div class="section sec6">
 		<img class="bg" src="./img/click.gif" />
+		<div class="all-position">
+		{{#each pagecontent}}
+			<div class="alltip"><span class="icon"><img src="./img/person.src"></span><span class="tipcontent">{{#with this}}{{0}}{{/with}}</span></div>
+		{{/each}}
+		</div>
 		<div class="maka-Arrow">
 			<img src="./img/up.png"/>		
 		</div>
