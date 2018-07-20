@@ -346,11 +346,13 @@
 					$(".sec"+(5+i)+" .titles").addClass("kuanlarge");
 					$(".sec"+(5+i)+" .titles-content").addClass("textlarge");
 					$(".sec"+(5+i)+" .cws").addClass("cws_move");
+					$(".sec"+(5+i)+" .computer").addClass("computer_move");
 				}else{
 					$(".sec"+(5+i)+" .positionbg").removeClass("bglarge");
 					$(".sec"+(5+i)+" .titles").removeClass("kuanlarge");
 					$(".sec"+(5+i)+" .titles-content").removeClass("textlarge");
 					$(".sec"+(5+i)+" .cws").removeClass("cws_move");
+					$(".sec"+(5+i)+" .computer").removeClass("computer_move");
 				}
 			}
 			if(cur==(5+l)){
@@ -517,11 +519,13 @@
 					$(".sec"+(5+i)+" .titles").addClass("kuanlarge");
 					$(".sec"+(5+i)+" .titles-content").addClass("textlarge");
 					$(".sec"+(5+i)+" .cws").addClass("cws_move");
+					$(".sec"+(5+i)+" .computer").addClass("computer_move");
 				}else{
 					$(".sec"+(5+i)+" .positionbg").removeClass("bglarge");
 					$(".sec"+(5+i)+" .titles").removeClass("kuanlarge");
 					$(".sec"+(5+i)+" .titles-content").removeClass("textlarge");
 					$(".sec"+(5+i)+" .cws").removeClass("cws_move");
+					$(".sec"+(5+i)+" .computer").removeClass("computer_move");
 				}
 			}
 			if(cur==(5+l)){

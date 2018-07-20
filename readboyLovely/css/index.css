@@ -62,8 +62,8 @@
 	margin: 0 auto;
 	margin-top: 0.2rem;
 	width: 5.5rem;
-	height: 67%;
-	background-color: #ffffff;
+	height: 59%;
+	background-color: #fff5e5;
 }
 .content-wrap .title{
 	height: 0.6rem;
@@ -85,7 +85,7 @@
 	width: 0.32rem;
 	height: 0.32rem;
 	vertical-align: top;
-	background-image: url("../img/list.src");
+	background-image: url("../img/list.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	transform:scale(1);
@@ -298,7 +298,7 @@
 
 /*第一页样式*/
 .sec1{
-	background-color: #64d9d6 !important;
+	background-color: #00e8e2 !important;
 }
 .company-text{
 	position: absolute;
@@ -409,10 +409,12 @@
 	}
 }
 .tuzi{
+	margin: auto;
 	position: absolute;
-	left: -2.3rem;
-	bottom: -1.3rem;
-	width:180%;
+	left: 0rem;
+	right: 0rem;
+	bottom: -1rem;
+	width:80%;
 	z-index: 1;
 	transform: scale(0);
 	opacity: 0;
@@ -514,7 +516,7 @@
 
 /*第二页样式*/
 .sec2{
-	background-color: #eaf7fe !important;
+	background-color: #fefefe !important;
 }
 .sec2 .left-line{
 	position: absolute;
@@ -601,8 +603,7 @@
 	position: absolute;
 	left: 0rem;
 	right: 0rem;
-	width: 6.58rem;
-	height: 4.94rem;
+	width: 5.5rem;
 	bottom: -0.8rem;
 	z-index: 1;
 }
@@ -638,7 +639,7 @@
 
 /*第三页样式*/
 .sec3{
-	background-color: #f15a5a !important;
+	background-color: #feb0b5 !important;
 }
 .sec3 .left-line{
 	position: absolute;
@@ -874,7 +875,7 @@
 
 /*第四页样式*/
 .sec4{
-	background-color: #99d9e8 !important;
+	background-color: #8adae8 !important;
 }
 .sec4 .left-line{
 	position: absolute;
@@ -921,7 +922,7 @@
 	margin-top: 0.1rem;
 	width: 0.45rem;
 	height: 0.45rem;
-	background-image: url("../img/list.src");
+	background-image: url("../img/list.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	transform:scale(0);
@@ -1051,6 +1052,45 @@
 	z-index: 0;
 	opacity: 0;
 	transform: scale(0);
+}
+.computer{
+	margin: auto;
+	width: 80%;
+	position: absolute;
+	left: 0rem;
+	right: 0rem;
+	bottom: -2rem;
+	z-index: 0;
+	opacity: 0;
+}
+.computer_move{
+	animation: computer_m 1s linear;
+	-webkit-animation: computer_m 1s linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay:2.5s;
+	-webkit-animation-delay:2.5s;
+}
+@keyframes computer_m{
+	from{
+		opacity: 0;
+		bottom:-2rem; 
+	}
+	to{
+		opacity: 1;
+		bottom:0.2rem;
+	}
+}
+
+@-webkit-keyframes computer_m{
+	from{
+		opacity: 0;
+		bottom:-2rem; 
+	}
+	to{
+		opacity: 1;
+		bottom:0.2rem;
+	}
 }
 .titles-content{
 	margin:auto;
@@ -1204,7 +1244,7 @@
 #callus .content p{
 	width: 100%;
 	font-size: 0.3rem;
-	color: white;
+	color: #ad5006;
 	text-align:center;
 }
 .ship{
@@ -1212,7 +1252,7 @@
 	position: absolute;
 	left: 0rem;
 	right: 0rem;
-	bottom: -1rem;
+	bottom: 0rem;
 	width: 87%;
 	opacity: 0;
 	transform: scale(0);
