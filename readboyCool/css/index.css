@@ -23,6 +23,9 @@
 @keyframes content-wrap-m{0%{opacity: 0; transform: translateX(3rem);}100%{opacity: 1;transform: translateX(0rem);}}
 @-webkit-keyframes content-wrap-m{0%{opacity: 0;transform: translateX(3rem);}100%{opacity: 1;transform: translateX(0rem);}}
 .content-wrapper p{
+	font-size: 0.3rem;
+}
+.content-wrapper p:first-child{
 	font-size: 0.34rem;
 	font-weight: 600;
 	transform: translateX(-6rem);
