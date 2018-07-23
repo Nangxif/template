@@ -25,7 +25,7 @@
 .content-wrapper p{
 	font-size: 0.3rem;
 }
-.content-wrapper p:first-child{
+.content-wrapper .title{
 	font-size: 0.34rem;
 	font-weight: 600;
 	transform: translateX(-6rem);
@@ -612,6 +612,8 @@
 	bottom: 0rem;
 	width: 100%;
 	height: 6rem;
+	opacity: 0;
+	transform: scale(1.2);
 }
 .sec4 .content-wrapper{
 	transform: scale(0);
@@ -622,8 +624,6 @@
 @-webkit-keyframes content-wrapper-m{0%{opacity: 0;transform: scale(0);}75%{opacity: 1;transform: scale(1.1);}85%{opacity: 1;transform: scale(0.9);}100%{opacity: 1;transform: scale(1);}}
 #masterslider{
 	box-sizing: content-box;
-	opacity: 0 !important;
-	transform: scale(1.2);
 }
 .masterslider-move{animation: masterslider-m 2s linear;-webkit-animation: masterslider-m 2s linear;animation-delay:2.5s;-webkit-animation-delay:2.5s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
 @keyframes masterslider-m{0%{opacity: 0; transform: scale(1.3);}75%{opacity: 0.7;transform: scale(0.9);}85%{opacity: 1;transform: scale(1.1);}100%{opacity: 1;transform: scale(1);}}
