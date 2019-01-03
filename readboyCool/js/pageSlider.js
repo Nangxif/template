@@ -173,6 +173,22 @@
 			}
 		}
 	})
+	// 第一个页面所有定时器
+	var timer1two=null;
+	var timer1zp=null;
+	var timer1last=null;
+	// 第二个页面所有定时器
+	var timer2line=null;
+	var timer2title=null;
+	var timer3content=null;
+	//第三个页面所有的定时器
+	var timer3border=null;
+	var timer3mouse=null;
+	var timer3line=null;
+	//第四个页面所有的定时器
+	var timer4bike=null;
+	var timer4kuan=null;
+	var timer4title=null;
 	PageSlider.prototype.showSec = function(index, direction) {
 		if ($('.current').length) $('.current,.next,.prev').css({
 			'-webkit-transition': null,
@@ -226,37 +242,6 @@
 				$(".sec3 .book .books3").removeClass("books3-move");
 				$(".sec3 .book .books4").removeClass("books4-move");
 			}
-			if(cur==4){
-				$(".sec4 .title p").addClass("p-move");
-				$(".sec4 .content").addClass("content-move");
-				$(".sec4 .content-wrapper").addClass("content-wrapper-move");
-				$(".sec4 .master").addClass("masterslider-move");
-			}else{
-				$(".sec4 .title p").removeClass("p-move");
-				$(".sec4 .content").removeClass("content-move");
-				$(".sec4 .content-wrapper").removeClass("content-wrapper-move");
-				$(".sec4 .master").removeClass("masterslider-move");
-			}
-			for(var i=0;i<l;i++){
-				if(cur==(7+i)){
-					$(".sec"+(7+i)+" .title p").addClass("p-move");
-					$(".sec"+(7+i)+" .content").addClass("content-move");
-					$(".sec"+(7+i)+" .content-wrapper").addClass("content-wrap-move");
-					$(".sec"+(7+i)+" .content-wrapper p:first-child").addClass("content-wrapperp-move");
-				}else{
-					$(".sec"+(7+i)+" .title p").removeClass("p-move");
-					$(".sec"+(7+i)+" .content").removeClass("content-move");
-					$(".sec"+(7+i)+" .content-wrapper").removeClass("content-wrap-move");
-					$(".sec"+(7+i)+" .content-wrapper p:first-child").removeClass("content-wrapperp-move");
-				}
-			}
-			if(cur==(8+l)){
-				$(".sec"+(8+l)+" .title p").addClass("p-move");
-				$(".sec"+(8+l)+" .content").addClass("content-move");
-			}else{
-				$(".sec"+(8+l)+" .title p").removeClass("p-move");
-				$(".sec"+(8+l)+" .content").removeClass("content-move");
-			}
 		} else if (direction == 'prev') {
 			$("#name,#tel,#position,#introduce").blur();//当不在最后一页的时候，手机的软键盘收起
 			$(".sec1 .black-opacity").addClass("black-opacity-move");
@@ -302,37 +287,6 @@
 				$(".sec3 .book .books2").removeClass("books2-move");
 				$(".sec3 .book .books3").removeClass("books3-move");
 				$(".sec3 .book .books4").removeClass("books4-move");
-			}
-			if(cur==4){
-				$(".sec4 .title p").addClass("p-move");
-				$(".sec4 .content").addClass("content-move");
-				$(".sec4 .content-wrapper").addClass("content-wrapper-move");
-				$(".sec4 .master").addClass("masterslider-move");
-			}else{
-				$(".sec4 .title p").removeClass("p-move");
-				$(".sec4 .content").removeClass("content-move");
-				$(".sec4 .content-wrapper").removeClass("content-wrapper-move");
-				$(".sec4 .master").removeClass("masterslider-move");
-			}
-			for(var i=0;i<l;i++){
-				if(cur==(7+i)){
-					$(".sec"+(7+i)+" .title p").addClass("p-move");
-					$(".sec"+(7+i)+" .content").addClass("content-move");
-					$(".sec"+(7+i)+" .content-wrapper").addClass("content-wrap-move");
-					$(".sec"+(7+i)+" .content-wrapper p:first-child").addClass("content-wrapperp-move");
-				}else{
-					$(".sec"+(7+i)+" .title p").removeClass("p-move");
-					$(".sec"+(7+i)+" .content").removeClass("content-move");
-					$(".sec"+(7+i)+" .content-wrapper").removeClass("content-wrap-move");
-					$(".sec"+(7+i)+" .content-wrapper p:first-child").removeClass("content-wrapperp-move");
-				}
-			}
-			if(cur==(8+l)){
-				$(".sec"+(8+l)+" .title p").addClass("p-move");
-				$(".sec"+(8+l)+" .content").addClass("content-move");
-			}else{
-				$(".sec"+(8+l)+" .title p").removeClass("p-move");
-				$(".sec"+(8+l)+" .content").removeClass("content-move");
 			}
 		} else {
 			$("#name,#tel,#position,#introduce").blur();

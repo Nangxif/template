@@ -14,28 +14,11 @@
 	width: auto;
 	line-height: 0.46rem;
 	font-size: 0.3rem;
-	transform: translateX(3rem);
-	opacity: 0;
 }
-.content-wrap-move{
-	animation: content-wrap-m 1s linear;-webkit-animation: content-wrap-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:2.3s;-webkit-animation-delay:2.3s;
-}
-@keyframes content-wrap-m{0%{opacity: 0; transform: translateX(3rem);}100%{opacity: 1;transform: translateX(0rem);}}
-@-webkit-keyframes content-wrap-m{0%{opacity: 0;transform: translateX(3rem);}100%{opacity: 1;transform: translateX(0rem);}}
 .content-wrapper p{
-	font-size: 0.3rem;
-}
-.content-wrapper .title{
 	font-size: 0.34rem;
 	font-weight: 600;
-	transform: translateX(-6rem);
-	opacity: 0;
 }
-.content-wrapperp-move{
-	animation: content-wrapperp-m 1s linear;-webkit-animation: content-wrapperp-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-delay:2.3s;-webkit-animation-delay:2.3s;
-}
-@keyframes content-wrapperp-m{0%{opacity: 0; transform: translateX(-6rem);}100%{opacity: 1;transform: translateX(0rem);}}
-@-webkit-keyframes content-wrap-m{0%{opacity: 0;transform: translateX(-6rem);}100%{opacity: 1;transform: translateX(0rem);}}
 /*播放按钮*/
 #play{
 	position: absolute;
@@ -123,35 +106,6 @@
 	font-size: 0.36rem;
 	font-weight: 600;
 	z-index: 1;
-	opacity: 0;
-	transform: scale(1.3);
-}
-/*所有p标签动画*/
-.p-move{
-	animation: p-m 0.7s linear;
-	-webkit-animation: p-m 0.7s linear;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-}
-@keyframes p-m{
-	from{
-		transform: scale(1.3);
-		opacity: 0;
-	}
-	to{
-		transform: scale(1);
-		opacity: 1;
-	}
-}
-@-webkit-keyframes p-m{
-	from{
-		transform: scale(1.3);
-		opacity: 0;
-	}
-	to{
-		transform: scale(1);
-		opacity: 1;
-	}
 }
 .pink .content{
 	margin:auto;
@@ -162,33 +116,7 @@
 	bottom: 0.5rem;
 	width: 6.5rem;
 	background-color: white;
-	transform: scale(0);
 }
-.content-move{
-	animation: content-m 1s linear;
-	-webkit-animation: content-m 1s linear;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	animation-delay:1.2s;
-	-webkit-animation-delay:1.2s;
-}
-@keyframes content-m{
-	from{
-		transform: scale(0);
-	}
-	to{
-		transform: scale(1);
-	}
-}
-@-webkit-keyframes content-m{
-	from{
-		transform: scale(0);
-	}
-	to{
-		transform: scale(1);
-	}
-}
-
 .black-opacity{
 	margin: auto;
 	display: block;
@@ -226,27 +154,6 @@
 		display: none;
 	}
 }
-.companylogo{
-	position: absolute;
-	bottom: 1rem;
-	width: 100%;
-	height: 1rem;
-	text-align: center;
-}
-.companylogo img{
-	height: 100%;
-}
-.companytext{
-	position: absolute;
-	bottom: 0.5rem;
-	width: 100%;
-	font-size: 0.26rem;
-	text-align: center;
-}
-
-
-
-
 
 /*第一页样式*/
 .sec1{
@@ -508,7 +415,6 @@
 	color: white;
 	z-index: 2;
 	opacity: 0;
-	font-family: "黑体";
 }
 .sec3 .book .book2,.sec3 .book .book4,.sec3 .book .book6,.sec3 .book .book8{
 	position: absolute;
@@ -519,7 +425,6 @@
 	color: white;
 	z-index: 2;
 	opacity: 0;
-	font-family: "黑体";
 }
 .book1-move{animation: book1-m 1s linear;-webkit-animation: book1-m 1s linear;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
 @keyframes book1-m{0%{opacity: 0; top: 0rem;}50%{opacity: 1;top: 0.8rem;}90%{opacity: 1;top: 0.8rem;}100%{opacity: 0;}}
@@ -612,22 +517,10 @@
 	bottom: 0rem;
 	width: 100%;
 	height: 6rem;
-	opacity: 0;
-	transform: scale(1.2);
 }
-.sec4 .content-wrapper{
-	transform: scale(0);
-	opacity: 0;
-}
-.content-wrapper-move{animation: content-wrapper-m 1s linear;-webkit-animation: content-wrapper-m 1s linear;animation-delay:1.5s;-webkit-animation-delay:1.5s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
-@keyframes content-wrapper-m{0%{opacity: 0; transform: scale(0);}75%{opacity: 1;transform: scale(1.1);}85%{opacity: 1;transform: scale(0.9);}100%{opacity: 1;transform: scale(1);}}
-@-webkit-keyframes content-wrapper-m{0%{opacity: 0;transform: scale(0);}75%{opacity: 1;transform: scale(1.1);}85%{opacity: 1;transform: scale(0.9);}100%{opacity: 1;transform: scale(1);}}
 #masterslider{
 	box-sizing: content-box;
 }
-.masterslider-move{animation: masterslider-m 2s linear;-webkit-animation: masterslider-m 2s linear;animation-delay:2.5s;-webkit-animation-delay:2.5s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;}
-@keyframes masterslider-m{0%{opacity: 0; transform: scale(1.3);}75%{opacity: 0.7;transform: scale(0.9);}85%{opacity: 1;transform: scale(1.1);}100%{opacity: 1;transform: scale(1);}}
-@-webkit-keyframes masterslider-m{0%{opacity: 0;transform: scale(1.3);}75%{opacity: 0.7;transform: scale(0.9);}85%{opacity: 1;transform: scale(1.1);}100%{opacity: 1;transform: scale(1);}}
 .ms-view{
 	width: 100% !important;
 	height: 4rem !important;
@@ -641,6 +534,19 @@
 	margin:0rem !important;
 	width: 100% !important;
 	height: 100% !important;
+}
+.sec4 .master .logo{
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	height: 1rem;
+	text-align: center;
+}
+.sec4 .master .logo img{
+	height: 100%;
+}
+.sec4 .master .text{
+	font-size: 0.26rem;
+	text-align: center;
 }
 /*第五页样式*/
 .sec5{
@@ -714,61 +620,7 @@
 	line-height: 0.65rem;
 }
 
-
-
-
-
-
-
-#callus .title{
-	margin: auto;
-	position: absolute;
-	left: 0rem;
-	right: 0rem;
-	top: 1rem;
-	font-size: 0.38rem;
-	text-align: center;
-}
-#callus ul{
-	margin: auto;
-	position: absolute;
-	left: 0rem;
-	right: 0rem;
-	top: 2rem;
-	width: 5.5rem;
-	font-size: 0.34rem;
-}
-#callus ul li{
-	height: 0.8rem;
-	list-style: none;
-}
-#callus .serchmore{
-	margin: auto;
-	position: absolute;
-	left: 0rem;
-	right: 0rem;
-	bottom: 0.5rem;
-	width:6rem;
-	height: 4.5rem;
-	background-image: url('../img/computer.src');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	overflow: hidden;
-}
-#callus .serchmore img{
-	display: block;
-	margin: 0 auto;
-	margin-top: 0.9rem;
-	width: 2rem;
-}
-#callus .serchmore p{
-	margin:0 auto;
-	width: 3.5rem;
-	font-size: 0.3rem;
-	text-align: center;
-	border-bottom:2px solid black; 
-}
-
+/*第八页样式*/
 /*淡入动画*/
 .fadeIn{
 	animation: fadeIn-m 0.9s linear;
